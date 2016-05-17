@@ -1,0 +1,320 @@
+form{
+	//width: 300px;
+	//margin-right: auto;
+	//margin-left: auto;
+}
+form input{
+	//margin-bottom: 10px;
+}
+label.error{
+	color:#c0392b;
+}
+.bs-noti-signin-modal-lg, .bs-error-register-modal-lg {
+    color: #000;
+    font-size: 18px;
+}
+img.loading{
+    position: absolute;
+    left: 46%;
+    z-index: 1;
+    display: none;
+}
+img.edit-loading{
+    position: absolute;
+    left: -60%;
+    right: 20%;
+    z-index: 1;
+    display: none;
+}
+label#confirm {
+    color: #1C00EB;
+}
+label#confirm_email {
+    color: #1C00EB;
+}
+.ko-grid-pageLinks {
+    display: none;
+}
+span.product_page.glyphicon.glyphicon-arrow-left {
+    font-size: 30px;
+    cursor: pointer;
+}
+span.product_page.glyphicon.glyphicon-arrow-right {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
+button.product_page.add {
+    float: right;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#product_list table.ko-grid.table {
+    border: 1px solid #DDD;
+}
+#product_list table.ko-grid.table th{
+    border-width: 1px;
+    cursor: pointer;
+}
+#product_list table.ko-grid.table th:hover {
+    background-color: #F1F1F1;
+}
+#product_list table.ko-grid.table td {
+    cursor: pointer;
+}
+.no_product {
+    display: none;
+}
+.no_product a.link_add {
+    width: 100%;
+    display: inline-block;
+}
+
+.no_supply {
+    display: none;
+}
+.no_supply a.link_add {
+    width: 100%;
+    display: inline-block;
+}
+
+label.colorPicker
+{
+	border:1px solid #2d6ca2;
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.clearMargin
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.clearPadding
+{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.asset-drop {
+	background-color: #dff0d8;
+	text-align: center;
+	border: 2px dashed #d58512;
+	padding-bottom: 10px;
+}
+
+.asset-drop:hover,.dragging {
+	background-color: #d9edf7;
+	border: 2px dashed #428bca;
+}
+
+#product-dropzone > .row,#variant-dropzone > .row
+{
+	margin: 10px 0px 0px;
+}
+
+#product-dropzone hr,#variant-dropzone hr
+{
+	margin: 0px;
+	border:1px dashed #d58512;
+	height: 0px;
+}
+
+#product-dropzone:hover hr,#variant-dropzone:hover hr
+{
+	border: 1px dashed #428bca;
+}
+
+#lstProductImage >div,#lstVariantImage  >div
+{
+	margin: 20px 0px 0px;
+	height: 100px;
+}
+
+#lstProductImage .row > div,#lstVariantImage .row >div
+{
+	line-height: 50%;
+}
+
+#lstProductImage .row,#lstVariantImage .row
+{
+	margin: 20px 0px;
+}
+table.variant-table>thead>tr>th{
+    border-bottom: 1px solid #DDD;
+}
+
+.iconDeleteImage {
+    cursor: pointer;
+}
+div#material_list .row {
+    margin-bottom: 10px;
+}
+div#material_list .row .col-md-4, div#material_list .row .col-md-1{
+    margin-top: 5px
+}
+
+span.selling_log_page.glyphicon.glyphicon-arrow-left {
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
+}
+span.selling_log_page.glyphicon.glyphicon-arrow-right {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
+button.selling_log_page.add {
+    float: right;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#selling-log-list table.ko-grid.table {
+    border: 1px solid #DDD;
+}
+#selling-log-list table.ko-grid.table th{
+    border-width: 1px;
+    cursor: pointer;
+}
+#selling-log-list table.ko-grid.table th:hover {
+    background-color: #F1F1F1;
+}
+#selling-log-list table.ko-grid.table td {
+    cursor: pointer;
+}
+.no_log {
+    display: none;
+}
+span.payment_log_page.glyphicon.glyphicon-arrow-left {
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+span.payment_log_page.glyphicon.glyphicon-arrow-right {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
+button.payment_log_page.add {
+    float: right;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#payment-log-list table.ko-grid.table {
+    border: 1px solid #DDD;
+}
+#payment-log-list table.ko-grid.table th{
+    border-width: 1px;
+    cursor: pointer;
+}
+#payment-log-list table.ko-grid.table th:hover {
+    background-color: #F1F1F1;
+}
+#payment-log-list table.ko-grid.table td {
+    cursor: pointer;
+}
+
+
+/*// type ahead*/
+.typeahead, .tt-query, .tt-hint {
+    /*border: 2px solid #CCCCCC;*/
+    /*border-radius: 8px;*/
+    /*font-size: 24px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*outline: medium none;*/
+    /*padding: 8px 12px;*/
+    /*width: 396px;*/
+}
+.typeahead {
+    /*background-color: #FFFFFF;*/
+}
+.typeahead:focus {
+    /*border: 1px solid #0097CF;*/
+}
+.tt-query {
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;*/
+}
+.tt-hint {
+    /*color: #999999;*/
+}
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 0px solid rgba(0, 0, 0, 0.2);
+    /*border-radius: 8px;*/
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
+    /*margin-top: 12px;*/
+    /*padding: 8px 0;*/
+    width: 100%;
+}
+.tt-suggestion {
+    /*font-size: 24px;*/
+    /*line-height: 24px;*/
+    /*padding: 3px 20px;*/
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+.tt-hint {
+    /*color: #999999;*/
+    display: none;
+}
+.error-item{
+    background-color: #f2dede;
+}
+.add-item{
+float: right;
+margin-bottom: 15px;
+display: inline-block;
+}
+.can-not-save{
+    background-color: #90A89D;
+    border-color: #5E6663;
+}
+.can-not-add{
+    background-color: #90A89D;
+    border-color: #5E6663;
+}
+.header-right {
+    font-size: 16px;
+    position: relative;
+    top: -30px;
+    float: right;
+    right: 20px;
+}
+.header-right a {
+    cursor: pointer;
+}
+.formfield-wrapper input, .formfield-wrapper p, .formfield-wrapper select, .formfield-wrapper textarea {
+    float: left !important;
+}
+.company-content-body {
+    padding: 30px;
+}
+.search-field-second {
+    display: inline-block;
+}
+.small-float-label {
+    float: left;
+    margin-left: 10px;
+}
+.field-group.form-field.small-inline {
+    float: left;
+    top: 6px;
+    position: relative;
+    left: 10px;
+}
+.search-field-first {
+    margin-bottom: 14px;
+}
+.field-group.form-field.small-inline input.keyword-field {
+    height: 30px;
+    width: 672px;
+}

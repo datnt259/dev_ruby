@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ruby User Manager</title>
+    <meta property="og:site_name" content="Ruby">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.4.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/adminlte.css">
+    <link rel="stylesheet" type="text/css" href="/css/c3.css">
+    <link rel="stylesheet" type="text/css" href="/css/style-admin.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/jquery-ui-1.10.4.min.js"></script>
+    <script src="/js/bootstrap-3.1.1.min.js"></script>
+    <script src="/js/adminlte.js"></script>
+    <script src="/js/knockout.min.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/c3.min.js"></script>
+    <script src="/js/jquery-validate/jquery.validate.js"></script>
+    <script src="/js/pages/signin/signin.js"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+  </head>
+  <body>
+
+<body class="bg-black">
+    <div class="form-box" id="login-box">
+        <div class="header">Sign In</div>
+        <%= form_tag login_path do %>
+        <div class="body bg-gray">
+            <div class="form-group">
+                <input type="text" name="email" id="email" placeholder="Username" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password"/>
+            </div>
+            <!--
+            <div class="form-group">
+                <input class="remember_me" type="checkbox" name="remember_me"/> Remember me
+            </div>
+            --!>
+        </div>
+        <div class="footer">
+            <button type="submit" class="btn bg-olive btn-block">Sign me in</button>  
+            <!--
+            <p><a href="/forgotten">I forgot my password</a></p>
+            <a href="/register" class="text-center">Register a new supplier</a>
+            --!>
+            <a href="/register" class="text-center">Register new account</a>
+        </div>
+        <% end %>
+        <!--
+        <div class="margin text-center">
+            <span>Sign in using social networks</span>
+            <br/>
+            <button class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>
+            <button class="btn bg-aqua btn-circle"><i class="fa fa-twitter"></i></button>
+            <button class="btn bg-red btn-circle"><i class="fa fa-google-plus"></i></button>
+        </div>
+        --!>
+    </div>
+</body>
+<% if flash[:notice] -%>
+<div class="modal fade bs-noti-signin-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center"><%=h flash[:notice] %></div>
+            </div>
+        </div>
+    </div>
+</div>
+<% end -%>
+  </body>
+</html>
